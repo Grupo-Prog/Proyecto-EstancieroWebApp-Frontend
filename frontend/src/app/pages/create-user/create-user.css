@@ -1,4 +1,4 @@
-.menu-container {
+.create-user-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,15 +6,12 @@
   gap: 300px;
 }
 
-.secondary-tittle{
-  text-align: center;
-}
-
-.button-section {
+.form-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  gap: 40px;
+  gap: 10px;
 }
-
 
 

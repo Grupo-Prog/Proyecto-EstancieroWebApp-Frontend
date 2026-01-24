@@ -1,1 +1,37 @@
-<p>login works!</p>
+<div class="login-container">
+
+  <section class="title-section">
+    <h1 class="main-title">INICIO DE SESIÓN</h1>
+  </section>
+
+  <section class="form-container">
+
+  <section class="form-section">
+<input class="form-input" name="e-mail" type="email" placeholder="Ingrese su e-mail">
+    <input class="form-input" name="password" type="password" placeholder="Ingrese su contraseña">
+  </section>
+
+
+  <section class="init-button-section">
+    <button class="btn btn-primary" (click)="goToMenuPage()">
+      INICIAR
+    </button>
+    <button class="btn btn-secondary" (click)="goToStartPage()">
+      SALIR
+    </button>
+  </section>
+
+  <section class="create-button-section">
+    <button class="btn btn-primary" (click)="goToCreateUserPage()">
+      CREAR USUARIO
+    </button>
+    <button class="btn btn-secondary" (click)="goToUpdateUserPage()">
+      MODIFICAR USUARIO
+    </button>
+  </section>
+  </section>
+
+</div>
+
+
+
