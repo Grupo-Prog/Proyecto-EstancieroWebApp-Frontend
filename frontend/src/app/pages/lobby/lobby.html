@@ -7,14 +7,16 @@
 
   <section class="configuration-section">
     <section class="player-size-section">
-    <label>Añada los jugadores que desee a la partida(mínimo 2 y máximo 6)</label>
+    <label>Seleccione el color de su ficha </label>
 
       <div class="players-list">
         <div class="player-card user-player">
           <select class="player-select">
             <option selected>Jugador</option>
           </select>
+
           <select class="player-colour">
+            <option selected>Al azar</option>
             <option>Rojo</option>
             <option>Azul</option>
             <option>Amarillo</option>
@@ -22,67 +24,109 @@
             <option>Blanco</option>
             <option>Negro</option>
           </select>
-          <label>
+
             <input type="checkbox">
-          </label>
+
         </div>
 
+        <label>Añada los jugadores que desee a la partida(mínimo 2 y máximo 6)</label>
+
         <div class="player-card slot-player">
-          <select class="bot-select-1">
+          <select class="bot-select">
             <option selected>Cerrado</option>
             <option>Bot</option>
+            <option>Humano</option>
           </select>
+
           <select class="difficulty-select">
             <option>Fácil</option>
             <option>Medio</option>
-            <option>Difficile</option>
+            <option>Difícil</option>
           </select>
-          <label>
+
             <input type="checkbox">
-          </label>
-          <select class="player-select">
-            <option selected>Cerrado</option>
-            <option>Bot</option>
-          </select>
-          <select class="player-select">
-            <option selected>Cerrado</option>
-            <option>Bot</option>
-          </select>
-          <select class="player-select">
-            <option selected>Cerrado</option>
-            <option>Bot</option>
-          </select>
-          <select class="player-select">
-            <option selected>Cerrado</option>
-            <option>Bot</option>
-          </select>
+
         </div>
+
+        <div class="player-card slot-player">
+          <select class="bot-select">
+            <option selected>Cerrado</option>
+            <option>Bot</option>
+            <option>Humano</option>
+          </select>
+
+          <select class="difficulty-select">
+            <option>Fácil</option>
+            <option>Medio</option>
+            <option>Difícil</option>
+          </select>
+
+            <input type="checkbox">
 
       </div>
 
+        <div class="player-card slot-player">
+          <select class="bot-select">
+            <option selected>Cerrado</option>
+            <option>Bot</option>
+            <option>Humano</option>
+          </select>
 
+          <select class="difficulty-select">
+            <option>Fácil</option>
+            <option>Medio</option>
+            <option>Difícil</option>
+          </select>
 
+            <input type="checkbox">
+
+</div>
+
+        <div class="player-card slot-player">
+          <select class="bot-select">
+            <option selected>Cerrado</option>
+            <option>Bot</option>
+            <option>Humano</option>
+          </select>
+
+          <select class="difficulty-select">
+            <option>Fácil</option>
+            <option>Medio</option>
+            <option>Difícil</option>
+          </select>
+
+            <input type="checkbox">
+
+        </div>
+
+        <div class="player-card slot-player">
+          <select class="bot-select">
+            <option selected>Cerrado</option>
+            <option>Bot</option>
+            <option>Humano</option>
+          </select>
+
+          <select class="difficulty-select">
+            <option>Fácil</option>
+            <option>Medio</option>
+            <option>Difícil</option>
+          </select>
+
+            <input type="checkbox">
+
+        </div>
+
+        </div>
 
   </section>
-  </section>
 
-
-
-
-  <section class="configuration-button-section">
-    <button class="btn btn-primary">
-      CONFIRMAR
-    </button>
-    <button class="btn btn-secondary">
-      REESTABLECER
-    </button>
   </section>
 
   <section class="game-section">
-    <button class="btn btn-primary">
+    <button class="btn btn-primary" (click)="goToBoardPage()">
       COMENZAR PARTIDA
     </button>
-    <button class="btn btn-secondary">
+    <button class="btn btn-secondary" (click)="goToMenuPage()">
       VOLVER ATRÁS
     </button>
   </section>

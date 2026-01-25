@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-lobby',
@@ -8,5 +9,16 @@ import { Component } from '@angular/core';
   standalone: true
 })
 export class Lobby {
+
+  constructor(private router: Router) {}
+
+
+  goToMenuPage(){
+    this.router.navigate(['menu']);
+  }
+
+  goToBoardPage(){
+    this.router.navigate(['board']);
+  }
 
 }

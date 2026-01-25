@@ -7,6 +7,7 @@ import {Menu} from './pages/menu/menu';
 import {Configuration} from './pages/configuration/configuration';
 import {Load} from './pages/load/load';
 import {Lobby} from './pages/lobby/lobby';
+import {Board} from './pages/board/board';
 
 export const routes: Routes = [
   { path: '', component: Start},
@@ -17,4 +18,6 @@ export const routes: Routes = [
   { path: 'configuration', component: Configuration},
   { path: 'load', component: Load},
   { path: 'lobby', component: Lobby},
+  { path: 'board', component: Board},
+
 ];
