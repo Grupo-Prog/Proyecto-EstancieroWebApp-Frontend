@@ -45,7 +45,8 @@ export class GameService {
   }
 
 
-  // PUT /api/games/{gameId}/removeBot/{botId}
+  // PUT
+
   removeBot(gameId: number, botId: number): Observable<GameResponseDTO> {
     return this.http.put<GameResponseDTO>(`${this.apiUrl}/${gameId}/removeBot/${botId}`, {});
   }
