@@ -1,5 +1,14 @@
 <div class="menu-container">
 
+  <!--user logeado-->
+  <section class="user-logged">
+    @if ( isLoggedIn() ) {
+      <p>Usuario: {{ getUserName() }}</p>
+    } @else {
+      <p> Logeate porfa </p>
+    }
+  </section>
+  <!--  end-->
   <section class="title-section">
     <h1 class="main-title">MENÚ DE INICIO</h1>
     <p class="secondary-tittle">BIENVENIDO!</p>

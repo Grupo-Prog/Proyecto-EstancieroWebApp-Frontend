@@ -1,16 +1,25 @@
-import { Component } from '@angular/core';
+import {Component, inject} from '@angular/core';
 import { Router } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { UserService } from '../../core/services/user/user-service';
+import { AuthService } from '../../core/services/auth/auth-service';
 
 @Component({
   selector: 'app-login',
-  imports: [],
+  imports: [
+    FormsModule
+  ],
   templateUrl: './login.html',
   styleUrl: './login.css',
   standalone: true
 })
 export class Login {
+  private router = inject(Router);
+  private userService = inject(UserService);
+  private authService = inject(AuthService);
 
-  constructor(private router: Router) {}
+  email = '';
+  password = '';
 
   goToStartPage() {
     this.router.navigate(['']);
@@ -26,6 +35,23 @@ export class Login {
 
   goToMenuPage(){
     this.router.navigate(['menu']);
+  }
+
+
+  login(): void {
+    const dto = {
+      email: this.email,
+      password: this.password
+    };
+
+    this.userService.loginn(dto).subscribe({
+      next: (user) => {
+        this.authService.setUserSession(user);
+        console.log("Useer logged", user);
+        this.router.navigate(['menu']);
+      },
+      error: () => alert('Credentials error!')
+    });
   }
 
 }

@@ -16,5 +16,11 @@
   gap: 40px;
 }
 
+/*/usuario logeado/*/
+.user-logged {
+  position: absolute;
+  top: 24px;
+  left: 32px;
+}
 
 
