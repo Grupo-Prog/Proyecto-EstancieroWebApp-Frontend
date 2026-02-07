@@ -66,9 +66,197 @@
   width: 5.2%;
 }
 
+.tile-rio-negro-norte {
+  top: 77%;
+  left: 34.4%;
+  width: 5.2%;
+}
+
+.tile-premio{
+  top: 73.5%;
+  left: 20%;
+  width: 20%;
+}
+
+.tile-petrolera{
+  top: 72.3%;
+  left: 20.1%;
+  width: 14.4%;
+}
+
+.tile-salta-sur{
+  top: 67%;
+  left: 22%;
+  width: 5.5%;
+  rotate: 60deg;
+}
+
+.tile-destino-10{
+  top: 57.3%;
+  left: 10.2%;
+  width: 24%;
+}
+
+.tile-salta-centro{
+  top: 57.9%;
+  left: 16.9%;
+  width: 5.5%;
+  rotate: 60deg;
+}
+
 .tile-belgrano {
   top: 54.5%;
   left: 10%;
   width: 14%;
 }
 
+.tile-salta-norte{
+  top: 49%;
+  left: 11.6%;
+  width: 5.5%;
+  rotate: 60deg;
+}
+
+.tile-comisaria{
+  top: 36.3%;
+  left: -3.5%;
+  width: 28%;
+}
+
+.tile-suerte-15 {
+  top: 35.5%;
+  left: 6%;
+  width: 17%;
+}
+
+.tile-bodega{
+  top: 31%;
+  left: 8.5%;
+  width: 17%;
+}
+
+.tile-mendoza-sur {
+  top: 28.9%;
+  left: 16.8%;
+  width: 5.4%;
+  rotate: 120deg;
+}
+
+.tile-san-martin {
+  top: 22.2%;
+  left: 13.9%;
+  width: 16.5%;
+}
+
+.tile-mendoza-centro {
+  top: 20%;
+  left: 22%;
+  width: 5.4%;
+  rotate: 120deg;
+}
+
+.tile-mendoza-norte {
+  top: 15.4%;
+  left: 24.5%;
+  width: 5.4%;
+  rotate: 120deg;
+}
+
+.tile-descanso {
+  top: 1.5%;
+  left: 15.8%;
+  width: 28.5%;
+}
+
+.tile-mitre{
+  top: 7.4%;
+  left: 28.5%;
+  width: 16.9%;
+}
+
+.tile-santa-fe-sur{
+  top: 9.7%;
+  left: 39.3%;
+  width: 5.5%;
+  rotate: 180deg;
+}
+
+.tile-santa-fe-centro{
+  top: 9.7%;
+  left: 44.4%;
+  width: 5.5%;
+  rotate: 180deg;
+}
+
+.tile-destino-25 {
+  top: 4.6%;
+  left: 40.5%;
+  width: 24%;
+}
+
+.tile-santa-fe-norte{
+  top: 9.8%;
+  left: 54.9%;
+  width: 5.4%;
+  rotate: 180deg;
+}
+
+.tile-urquiza {
+  top: 7.5%;
+  left: 54.7%;
+  width: 16.5%;
+}
+
+.tile-libre-estacionamiento {
+  top: 5%;
+  left: 59.8%;
+  width: 20%;
+}
+
+.tile-libre-tucuman-sur{
+  top: 15.1%;
+  left: 69.8%;
+  width: 5.4%;
+  rotate: -120deg;
+}
+
+.tile-libre-tucuman-norte{
+  top: 19.6%;
+  left: 72.5%;
+  width: 5.4%;
+  rotate: -120deg;
+}
+
+.tile-libre-ingenio{
+  top: 21.8%;
+  left: 69.3%;
+  width: 17%;
+  rotate: 120deg;
+}
+
+.tile-cordoba-sur {
+  top: 28.7%;
+  left: 77.6%;
+  width: 5.4%;
+  rotate: -120deg;
+}
+
+.tile-cordoba-centro {
+  top: 33.1%;
+  left: 80.3%;
+  width: 5.4%;
+  rotate: -120deg;
+}
+
+.tile-cordoba-norte{
+  top: 37.7%; // altura en el tablero
+  left: 82.9%; // anchura en el tablero
+  width: 5.4%; // tamaño de la casilla
+  rotate: -120deg; // rotación de la casilla
+}
+
+.tile-marche-preso{
+  top: 43.7%;
+  left: 81%;
+  width: 17%;
+}
