@@ -56,13 +56,13 @@
 
 .tile-impuesto-redito {
   top: 77%;
-  left: 44.9%;
+  left: 44.8%;
   width: 5.4%;
 }
 
 .tile-rio-negro-sur {
   top: 77%;
-  left: 39.5%;
+  left: 39.6%;
   width: 5.2%;
 }
 
@@ -106,14 +106,14 @@
 
 .tile-belgrano {
   top: 54.5%;
-  left: 10%;
+  left: 10.1%;
   width: 14%;
 }
 
 .tile-salta-norte{
   top: 49%;
-  left: 11.6%;
-  width: 5.5%;
+  left: 11.8%;
+  width: 5.45%;
   rotate: 60deg;
 }
 
@@ -138,27 +138,27 @@
 .tile-mendoza-sur {
   top: 28.9%;
   left: 16.8%;
-  width: 5.4%;
+  width: 5.5%;
   rotate: 120deg;
 }
 
 .tile-san-martin {
   top: 22.2%;
   left: 13.9%;
-  width: 16.5%;
+  width: 16.6%;
 }
 
 .tile-mendoza-centro {
-  top: 20%;
+  top: 19.9%;
   left: 22%;
-  width: 5.4%;
+  width: 5.5%;
   rotate: 120deg;
 }
 
 .tile-mendoza-norte {
-  top: 15.4%;
-  left: 24.5%;
-  width: 5.4%;
+  top: 15.38%;
+  left: 24.6%;
+  width: 5.5%;
   rotate: 120deg;
 }
 
@@ -190,21 +190,21 @@
 
 .tile-destino-25 {
   top: 4.6%;
-  left: 40.5%;
+  left: 40.6%;
   width: 24%;
 }
 
 .tile-santa-fe-norte{
-  top: 9.8%;
-  left: 54.9%;
-  width: 5.4%;
+  top: 9.7%;
+  left: 55%;
+  width: 5.45%;
   rotate: 180deg;
 }
 
 .tile-urquiza {
   top: 7.5%;
   left: 54.7%;
-  width: 16.5%;
+  width: 16.7%;
 }
 
 .tile-libre-estacionamiento {
@@ -214,14 +214,14 @@
 }
 
 .tile-libre-tucuman-sur{
-  top: 15.1%;
-  left: 69.8%;
+  top: 15.3%;
+  left: 69.9%;
   width: 5.4%;
   rotate: -120deg;
 }
 
 .tile-libre-tucuman-norte{
-  top: 19.6%;
+  top: 19.7%;
   left: 72.5%;
   width: 5.4%;
   rotate: -120deg;
@@ -249,14 +249,54 @@
 }
 
 .tile-cordoba-norte{
-  top: 37.7%; // altura en el tablero
-  left: 82.9%; // anchura en el tablero
-  width: 5.4%; // tamaño de la casilla
-  rotate: -120deg; // rotación de la casilla
+  top: 37.7%; /* altura en el tablero*/
+  left: 82.9%; /* anchura en el tablero*/
+  width: 5.4%; /* tamaño de la casilla*/
+  rotate: -120deg; /* rotación de la casilla*/
 }
 
 .tile-marche-preso{
   top: 43.7%;
   left: 81%;
   width: 17%;
+}
+
+.title-suerte-36{
+  top: 46.6%;
+  left: 77.1%;
+  width: 16.9%;
+}
+
+.title-bsas-sur{
+  top: 53.1%;
+  left: 80.3%;
+  width: 5.5%;
+  rotate: -60deg;
+}
+
+.title-destino-38{
+  top: 55.4%;
+  left: 72%;
+  width: 17%;
+}
+
+.title-bsas-centro{
+  top: 62.2%;
+  left: 75.1%;
+  width: 5.5%;
+  rotate: -60deg;
+}
+
+.title-bsas-norte{
+  top: 66.6%;
+  left: 72.5%;
+  width: 5.5%;
+  rotate: -60deg;
+}
+
+.title-impuestos-ventas{
+  top: 71%;
+  left: 70.1%;
+  width: 5.5%;
+  rotate: -60deg;
 }
