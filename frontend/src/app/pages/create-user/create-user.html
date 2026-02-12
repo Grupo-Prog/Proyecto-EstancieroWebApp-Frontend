@@ -7,14 +7,14 @@
   <section class="form-container">
 
     <section class="form-section">
-      <input class="form-input" name="name" type="text" placeholder="Elija un nombre">
-      <input class="form-input" name="e-mail" type="email" placeholder="Elija un e-mail">
-      <input class="form-input" name="password" type="password" placeholder="Elija una contraseña">
+      <input class="form-input" name="name" type="text" [(ngModel)]="name" placeholder="Elija un nombre">
+      <input class="form-input" name="e-mail" type="email" [(ngModel)]="email" placeholder="Elija un e-mail">
+      <input class="form-input" name="password" type="password" [(ngModel)]="password" placeholder="Elija una contraseña">
     </section>
 
 
     <section class="init-button-section">
-      <button class="btn btn-primary" (click)="goToLoginPage()">
+      <button class="btn btn-primary" (click)="create()">
         CREAR
       </button>
       <button class="btn btn-secondary" (click)="goToLoginPage()">
