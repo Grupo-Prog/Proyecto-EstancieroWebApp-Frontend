@@ -7,11 +7,12 @@
 
   <section class="configuration-section">
     <section class="player-size-section">
-    <label>Seleccione el color de su ficha </label>
+      <label>Seleccione el color de su ficha</label>
 
       <div class="players-list">
+
         <div class="player-card user-player">
-          <select class="player-select">
+          <select class="player-select" disabled>
             <option selected>Jugador</option>
           </select>
 
@@ -25,105 +26,34 @@
             <option>Negro</option>
           </select>
 
-            <input type="checkbox">
-
+          <input type="checkbox">
         </div>
 
-        <label>Añada los jugadores que desee a la partida(mínimo 2 y máximo 6)</label>
+        <label>Añada los jugadores que desee a la partida (mínimo 2 y máximo 6)</label>
 
-        <div class="player-card slot-player">
-          <select class="bot-select">
-            <option selected>Cerrado</option>
-            <option>Bot</option>
-            <option>Humano</option>
+        <div class="player-card slot-player" *ngFor="let slot of playerSlots; let i = index" [hidden]="i === 0">
+
+          <select [(ngModel)]="slot.type" class="bot-select">
+            <option value="CLOSED" selected>Cerrado</option>
+            <option value="BOT">Bot</option>
+            <option value="HUMAN">Humano</option>
           </select>
 
-          <select class="difficulty-select">
-            <option>Fácil</option>
-            <option>Medio</option>
-            <option>Difícil</option>
+          <select [(ngModel)]="slot.difficulty" class="difficulty-select" [disabled]="slot.type !== 'BOT'">
+            <option value="EASY">Fácil</option>
+            <option value="MEDIUM">Medio</option>
+            <option value="HARD">Difícil</option>
           </select>
 
-            <input type="checkbox">
-
+          <input type="checkbox">
         </div>
-
-        <div class="player-card slot-player">
-          <select class="bot-select">
-            <option selected>Cerrado</option>
-            <option>Bot</option>
-            <option>Humano</option>
-          </select>
-
-          <select class="difficulty-select">
-            <option>Fácil</option>
-            <option>Medio</option>
-            <option>Difícil</option>
-          </select>
-
-            <input type="checkbox">
 
       </div>
-
-        <div class="player-card slot-player">
-          <select class="bot-select">
-            <option selected>Cerrado</option>
-            <option>Bot</option>
-            <option>Humano</option>
-          </select>
-
-          <select class="difficulty-select">
-            <option>Fácil</option>
-            <option>Medio</option>
-            <option>Difícil</option>
-          </select>
-
-            <input type="checkbox">
-
-</div>
-
-        <div class="player-card slot-player">
-          <select class="bot-select">
-            <option selected>Cerrado</option>
-            <option>Bot</option>
-            <option>Humano</option>
-          </select>
-
-          <select class="difficulty-select">
-            <option>Fácil</option>
-            <option>Medio</option>
-            <option>Difícil</option>
-          </select>
-
-            <input type="checkbox">
-
-        </div>
-
-        <div class="player-card slot-player">
-          <select class="bot-select">
-            <option selected>Cerrado</option>
-            <option>Bot</option>
-            <option>Humano</option>
-          </select>
-
-          <select class="difficulty-select">
-            <option>Fácil</option>
-            <option>Medio</option>
-            <option>Difícil</option>
-          </select>
-
-            <input type="checkbox">
-
-        </div>
-
-        </div>
-
-  </section>
-
+    </section>
   </section>
 
   <section class="game-section">
-    <button class="btn btn-primary" (click)="goToBoardPage()">
+    <button class="btn btn-primary" (click)="startGame()">
       COMENZAR PARTIDA
     </button>
     <button class="btn btn-secondary" (click)="goToMenuPage()">
@@ -132,5 +62,3 @@
   </section>
 
 </div>
-
-

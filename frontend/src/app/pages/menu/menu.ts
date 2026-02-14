@@ -46,6 +46,7 @@ export class Menu {
 
     this.lobbyService.createGame(dto).subscribe({
       next: (game) => {
+        this.lobbyService.setCurrentGameId(game.id);
         console.log('Game created', game);
         this.router.navigate(['/lobby']);},
 

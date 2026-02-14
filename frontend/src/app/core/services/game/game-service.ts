@@ -26,5 +26,19 @@ export class GameService {
     return this.http.post<GameResponseDTO>(`${this.apiUrl}/${gameId}/start`, {});
   }
 
+  addColor(gameId: number, playerId: number, color: string): Observable<GameResponseDTO> {
+    const body = {
+      playerId: playerId,
+      color: color
+    };
+
+    return this.http.post<GameResponseDTO>(`${this.apiUrl}/${gameId}/addColor`, body);
+  }
+
+
+
+
+
+
 
 }

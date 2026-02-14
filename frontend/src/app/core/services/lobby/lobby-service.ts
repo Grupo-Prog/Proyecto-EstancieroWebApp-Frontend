@@ -12,6 +12,7 @@ import {CreateGameDTO} from '../../models/interfaces/game/create-game-dto';
 export class LobbyService {
   private apiUrl = 'http://localhost:8080/api/games';
   private http = inject(HttpClient);
+  private currentGameId: number | null = null;
 
   // POST
 
@@ -25,6 +26,17 @@ export class LobbyService {
 
   addBot(gameId: number, difficulty: BotDifficultyType): Observable<GameResponseDTO> {
     return this.http.post<GameResponseDTO>(`${this.apiUrl}/${gameId}/addBot`, { difficulty });
+  }
+
+  setCurrentGameId(id: number) {
+    this.currentGameId = id;
+  }
+
+  // GET
+
+  getCurrentGameId(): number {
+    if (!this.currentGameId) throw new Error('No game in progress');
+    return this.currentGameId;
   }
 
 
