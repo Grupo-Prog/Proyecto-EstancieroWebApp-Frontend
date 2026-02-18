@@ -47,7 +47,7 @@ export class Login {
     this.userService.login(dto).subscribe({
       next: (user) => {
         this.authService.setUserSession(user);
-        console.log("Useer logged", user);
+        console.log("User logged", user);
         this.router.navigate(['menu']);
       },
       error: () => alert('Credentials error!')
