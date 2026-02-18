@@ -44,7 +44,7 @@ export class Login {
       password: this.password
     };
 
-    this.userService.loginn(dto).subscribe({
+    this.userService.login(dto).subscribe({
       next: (user) => {
         this.authService.setUserSession(user);
         console.log("Useer logged", user);

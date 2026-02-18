@@ -30,7 +30,7 @@ export class UserService {
     return this.http.post<UserResponseDTO>(this.apiUrl, dto);
   }
 
-  loginn(dto: UserLoginRequestDTO): Observable<UserResponseDTO> {
+  login(dto: UserLoginRequestDTO): Observable<UserResponseDTO> {
     return this.http.post<UserResponseDTO>(`${this.apiUrl}/login`, dto);
   }
 
