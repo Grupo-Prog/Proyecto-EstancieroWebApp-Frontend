@@ -1,1 +1,29 @@
-<p>update-user works!</p>
+<div class="update-user-container">
+  <section class="title-section">
+    <h1>MODIFICAR USUARIO</h1>
+  </section>
+
+  <section class="form-container">
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label>Nombre de Usuario</label>
+        <input type="text" formControlName="username" class="form-control" />
+
+        @if (userForm.get('username')?.touched && userForm.get('username')?.invalid) {
+          <small class="error">El nombre es requerido y debe tener 4 caracteres.</small>
+        }
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" formControlName="email" class="form-control" />
+      </div>
+
+      <div class="actions">
+        <button type="submit" [disabled]="userForm.invalid">Guardar Cambios</button>
+        <button type="button" class="btn btn-secondary">BORRAR</button>
+        <app-back-button-component label="VOLVER"></app-back-button-component>
+      </div>
+    </form>
+  </section>
+</div>
