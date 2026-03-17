@@ -1,5 +1,5 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { BackButtonComponent } from '../../core/components/back-button-component/back-button-component';
+import { BackButtonComponent } from '../../shared/components/back-button-component/back-button-component';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { UserService } from '../../core/services/user/user-service';
 
