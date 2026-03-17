@@ -1,7 +1,8 @@
-import { Component, OnInit, OnDestroy, NgZone } from '@angular/core';
+import { Component, OnInit, OnDestroy, NgZone, inject } from '@angular/core';
 import { WebsocketService } from '../websocket/websocket-service';
 import { Subscription } from 'rxjs';
 import { CommonModule, NgFor, JsonPipe } from '@angular/common';
+import { NotificationService } from '../notification/notification-service';
 
 @Component({
   selector: 'app-test-ws',
@@ -19,6 +20,9 @@ import { CommonModule, NgFor, JsonPipe } from '@angular/common';
       <button (click)="enviar(msgInput.value); msgInput.value = ''">2. Enviar Mensaje</button>
 
       <hr />
+      <button (click)="testSuccess()">Success</button>
+      <button (click)="testWarning()">Warning</button>
+      <button (click)="testError()">Error</button>
 
       <h4>Mensajes Recibidos:</h4>
       <ul>
@@ -32,6 +36,7 @@ import { CommonModule, NgFor, JsonPipe } from '@angular/common';
 export class TestWsComponent implements OnInit, OnDestroy {
   historial: any[] = [];
   private sub!: Subscription;
+  private notifications = inject(NotificationService);
 
   constructor(
     private wsService: WebsocketService,
@@ -47,6 +52,16 @@ export class TestWsComponent implements OnInit, OnDestroy {
         this.historial = [...this.historial, msg];
       });
     });
+  }
+
+  testSuccess() {
+    this.notifications.showSuccess('Conexión establecida.');
+  }
+  testWarning() {
+    this.notifications.showWarning('Conexión perdida.');
+  }
+  testError() {
+    this.notifications.showError('Error del servidor.');
   }
 
   conectar() {
