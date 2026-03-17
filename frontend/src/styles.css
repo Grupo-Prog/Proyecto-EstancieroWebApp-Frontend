@@ -5,3 +5,17 @@ html, body {
   padding: 0;
 }
 
+.snack-error .mdc-snackbar__surface {
+  background-color: #c0392b !important;
+  color: white !important;
+}
+
+.snack-warning .mdc-snackbar__surface {
+  background-color: #e67e22 !important;
+  color: white !important;
+}
+
+.snack-success .mdc-snackbar__surface {
+  background-color: #27ae60 !important;
+  color: white !important;
+}
