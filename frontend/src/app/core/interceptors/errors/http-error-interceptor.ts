@@ -4,12 +4,27 @@ import { NotificationService } from '../../services/notification/notification-se
 import { inject } from '@angular/core';
 
 export const httpErrorInterceptor: HttpInterceptorFn = (req, next) => {
+  const notifications = inject(NotificationService);
+
   return next(req).pipe(
     catchError((error: HttpErrorResponse) => {
-      if (error.status === 401) {
-        //redirigir al login
-      } else if (error.status >= 500) {
-        inject(NotificationService).showError('Error del servidor.');
+      switch (error.status) {
+        case 0:
+          notifications.showError('Sin conexión. Revisá tu red.');
+          break;
+        case 401:
+          notifications.showWarning('Tu sesión expiró. Volvé a ingresar.');
+          break;
+        case 403:
+          notifications.showError('No tenés permisos para esta acción.');
+          break;
+        case 404:
+          notifications.showError('El recurso solicitado no existe.');
+          break;
+        default:
+          if (error.status >= 500) {
+            notifications.showError('Error del servidor. Intentá de nuevo.');
+          }
       }
       return throwError(() => error);
     }),
