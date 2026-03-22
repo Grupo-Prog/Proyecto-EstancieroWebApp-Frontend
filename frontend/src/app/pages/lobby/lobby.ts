@@ -52,7 +52,9 @@ export class Lobby {
       }
 
       const game = await firstValueFrom(this.gameService.startGame(gameId));
-      console.log('Match started', game);
+      console.log("Game started:", game);
+      this.gameService.currentGame = game;
+
       this.router.navigate(['/board']);
 
     } catch (err) {
