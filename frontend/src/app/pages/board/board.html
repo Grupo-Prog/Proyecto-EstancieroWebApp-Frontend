@@ -193,6 +193,33 @@
       </div>
     </div>
 
+    <!-- For de jugadores para renderizar los peones de cada jugador con su color-->
+      @if (game | async; as game) {
+        @for (player of game.players; track player.id) {
+              <img class="pieces" alt="pieces" [src]="gamePiecesSvg[player.color]" [ngStyle]="getPiecePosition(player.position)"/>
+            }
+      }
+
+
+
+
+  <!-- Img harcodeadas de las fichas x saber  como anotar las cordenadas  -->
+
+<!--    <img class="pieces" [src]="gamePiecesSvg['BLACK']" [style.left.%]="63"-->
+<!--         [style.top.%]="85" alt="RED">-->
+
+<!--    <img class="pieces" [src]="gamePiecesSvg['RED']" [style.left.%]="58"-->
+<!--         [style.top.%]="85" alt="RED">-->
+
+<!--    <img class="pieces" [src]="gamePiecesSvg['BLUE']" [style.left.%]="53"-->
+<!--         [style.top.%]="85" alt="BLUE">-->
+
+<!--    <img class="pieces" [src]="gamePiecesSvg['WHITE']" [style.left.%]="47.5"-->
+<!--         [style.top.%]="85" alt="RED">-->
+
+<!--    <img class="pieces" [src]="gamePiecesSvg['GREEN']" [style.left.%]="42.5"-->
+<!--         [style.top.%]="85" alt="RED">-->
+
 
 
 

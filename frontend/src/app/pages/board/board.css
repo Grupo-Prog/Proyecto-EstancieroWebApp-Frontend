@@ -9,6 +9,8 @@
 .board {
   position: relative;
   height: 100vh;
+  border: 3px solid red;
+
 }
 
 .board-image {
@@ -28,6 +30,12 @@
   filter: brightness(1.2);
 }
 
+
+.tile-container {
+  position:absolute;
+  inset:0;
+  z-index:10;
+}
 
 .tile img {
   width: 100%;
@@ -321,3 +329,16 @@
   left: 41.3%;
   width: 17.5%;
 }
+
+/*Piezas del jugador o peon*/
+
+.pieces{
+  position:absolute;
+  width:2.2%;
+  height:auto;
+  transform:translate(-50%, -50%);
+  z-index:5000;
+}
+
+
+
