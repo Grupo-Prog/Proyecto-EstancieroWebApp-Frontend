@@ -5,7 +5,8 @@ import {BoardResponseDTO} from './board-response-dto';
 export interface GameResponseDTO {
   id: number;
   players: PlayerResponseDTO[];
-  currentTurnPlayerId: number;
+  currentTurnIndex: number;
+  turnOrder: number[];
   board: BoardResponseDTO;
   status: GameStatusType;
 }
