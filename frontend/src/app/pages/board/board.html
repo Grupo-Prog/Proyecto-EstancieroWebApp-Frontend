@@ -1,12 +1,12 @@
 <div class="board-container">
   <div class="board">
-    <img class="board-image" src="assets/board/board.png" />
+    <img class="board-image" src="assets/board/board2.svg" />
 
     <!--CASILLAS-->
     <div class="tile-container">
 
       <div class="tile tile-salida" data-position="0" (click)="onTileClick(0)">
-        <img src="assets/board/provinces/salida-2.svg" />
+        <img src="assets/board/provinces/salida-0.svg" />
       </div>
 
       <!--FORMOSA-->
@@ -94,11 +94,11 @@
       </div>
 
       <div class="tile tile-descanso" data-position="21" (click)="onTileClick(21)">
-        <img src="assets/board/provinces/descanso-8.svg" />
+        <img src="assets/board/provinces/descanso-21.svg" />
       </div>
 
       <div class="tile tile-mitre" data-position="22" (click)="onTileClick(22)">
-        <img src="assets/board/provinces/bartolome-mitre.svg" />
+        <img src="assets/board/provinces/bartolome-mitre-22.svg" />
       </div>
 
       <!--SANTA FE-->
@@ -119,11 +119,11 @@
       </div>
 
       <div class="tile tile-urquiza" data-position="27" (click)="onTileClick(27)">
-        <img src="assets/board/provinces/urquiza.svg" />
+        <img src="assets/board/provinces/urquiza-27.svg" />
       </div>
 
       <div class="tile tile-libre-estacionamiento" data-position="28" (click)="onTileClick(28)">
-        <img src="assets/board/provinces/libre-estacionamiento-28.svg" />
+        <img src="assets/board/provinces/libre-estancionamiento-28.svg" />
       </div>
 
       <!--TUCUMAN-->
@@ -136,7 +136,7 @@
       </div>
 
       <div class="tile tile-libre-ingenio" data-position="31" (click)="onTileClick(31)">
-        <img src="assets/board/provinces/ingenio.svg" />
+        <img src="assets/board/provinces/ingenio-31.svg" />
       </div>
 
       <!--CÓRDOBA-->
@@ -153,13 +153,13 @@
       </div>
 
       <div class="tile tile-marche-preso" data-position="35" (click)="onTileClick(35)">
-        <img src="assets/board/provinces/marche-preso8.svg">
+        <img src="assets/board/provinces/marche-preso-35.svg">
       </div>
 
        <!--BUENOS AIRES-->
 
       <div class="tile title-suerte-36" data-position="36" (click)="onTileClick(36)">
-        <img src="assets/board/provinces/suerte-36.svg" />
+        <img src="assets/board/provinces/suerte-36-1.svg" />
       </div>
 
       <div class="tile title-bsas-sur" data-position="37" (click)="onTileClick(37)">
@@ -167,7 +167,7 @@
       </div>
 
       <div class="tile title-destino-38" data-position="38" (click)="onTileClick(38)">
-        <img src="assets/board/provinces/destino-38.svg" />
+        <img src="assets/board/provinces/destino-38-1.svg" />
       </div>
 
       <div class="tile title-bsas-centro" data-position="39" (click)="onTileClick(39)">
@@ -203,24 +203,27 @@
 
 
 
-  <!-- Img harcodeadas de las fichas x saber  como anotar las cordenadas  -->
+<!--   Img harcodeadas de las fichas x saber  como anotar las cordenadas  -->
 
-<!--    <img class="pieces" [src]="gamePiecesSvg['BLACK']" [style.left.%]="63"-->
-<!--         [style.top.%]="85" alt="RED">-->
+    <img class="pieces" alt="RED" [src]="gamePiecesSvg['BLACK']"
+         [style.left.%]="63"
+         [style.top.%]="85" >
 
-<!--    <img class="pieces" [src]="gamePiecesSvg['RED']" [style.left.%]="58"-->
-<!--         [style.top.%]="85" alt="RED">-->
+    <img class="pieces" [src]="gamePiecesSvg['RED']" [style.left.%]="58"
+         [style.top.%]="85" alt="RED">
 
-<!--    <img class="pieces" [src]="gamePiecesSvg['BLUE']" [style.left.%]="53"-->
-<!--         [style.top.%]="85" alt="BLUE">-->
+    <img class="pieces" [src]="gamePiecesSvg['BLUE']" [style.left.%]="53"
+         [style.top.%]="85" alt="BLUE">
 
-<!--    <img class="pieces" [src]="gamePiecesSvg['WHITE']" [style.left.%]="47.5"-->
-<!--         [style.top.%]="85" alt="RED">-->
+    <img class="pieces" [src]="gamePiecesSvg['WHITE']" [style.left.%]="47.5"
+         [style.top.%]="85" alt="RED">
 
-<!--    <img class="pieces" [src]="gamePiecesSvg['GREEN']" [style.left.%]="42.5"-->
-<!--         [style.top.%]="85" alt="RED">-->
+    <img class="pieces" [src]="gamePiecesSvg['GREEN']" [style.left.%]="42.5"
+         [style.top.%]="85" alt="RED">
 
-
+    <img class="pieces" alt="RED" [src]="gamePiecesSvg['BLACK']"
+         [style.left.%]="37"
+         [style.top.%]="85" >
 
 
 
